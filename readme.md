@@ -35,8 +35,7 @@ Channels:
 ### Gray Scaling
 We convert the 3-channel RGB image into a 1-channel grayscale image to prepare it for edge detection. Working on a single dimension is much easier than working on a 3-dimensional image.
 
-RGB to Grayscale Conversion Formula:
-$$ 0.299 * RED + 0.587 * GREEN + 0.114 * BLUE $$
+RGB to Grayscale Conversion Formula: $$0.299 * RED + 0.587 * GREEN + 0.114 * BLUE$$
 
 > Reversing the channels before passing the image to the converter significantly improves the quality of the final result!
 
