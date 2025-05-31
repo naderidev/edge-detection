@@ -44,7 +44,7 @@ $$ 0.299 * RED + 0.587 * GREEN + 0.114 * BLUE $$
 We apply a Gaussian filter to the grayscale image to reduce noise and detail. This step helps in detecting edges more accurately.
 
 Gaussian Blur Formula:
-$$ G(x, y) = \frac{1}{2\pi\sigma^2} e^{-\frac{x^2 + y^2}{2\sigma^2}} $$
+$$G(x, y) = \frac{1}{2\pi\sigma^2} e^{-\frac{x^2 + y^2}{2\sigma^2}}$$
 
 Where:
 - \( G(x, y) \) is the Gaussian function.
