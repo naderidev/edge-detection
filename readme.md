@@ -71,11 +71,11 @@ Steps for Gaussian Blurring:
 We use the Sobel operator to detect edges in the image. The Sobel operator calculates the gradient magnitude of the image, highlighting regions with high spatial frequency which correspond to edges.
 
 Sobel Edge Detection Formula:
-$$ G_x = \begin{bmatrix} -1 & 0 & 1 \\ -2 & 0 & 2 \\ -1 & 0 & 1 \end{bmatrix} $$
-$$ G_y = \begin{bmatrix} -1 & -2 & -1 \\ 0 & 0 & 0 \\ 1 & 2 & 1 \end{bmatrix} $$
+$$G_x = \begin{bmatrix} -1 & 0 & 1 \\ -2 & 0 & 2 \\ -1 & 0 & 1 \end{bmatrix}$$
+$$G_y = \begin{bmatrix} -1 & -2 & -1 \\ 0 & 0 & 0 \\ 1 & 2 & 1 \end{bmatrix}$$
 
 Gradient Magnitude:
-$$ G = \sqrt{G_x^2 + G_y^2} $$
+$$G = \sqrt{G_x^2 + G_y^2}$$
 
 Steps for Sobel Edge Detection:
 1. **Compute Gradients**: Compute the gradients in the x and y directions using the Sobel kernels \( G_x \) and \( G_y \).
@@ -98,10 +98,10 @@ Steps for Sobel Edge Detection:
 We apply a threshold to the gradient magnitude image to create a binary image where edges are highlighted.
 
 Thresholding Formula:
-$$ T(x, y) = \begin{cases} 
+$$T(x, y) = \begin{cases} 
 255 & \text{if } G(x, y) > \text{threshold} \\
 0 & \text{otherwise}
-\end{cases} $$
+\end{cases}$$
 
 Steps for Thresholding:
 1. **Apply Threshold**: Convert the gradient magnitude image to a binary image based on the threshold value.
