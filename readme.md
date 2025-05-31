@@ -79,14 +79,14 @@ Gradient Magnitude:
 $$G = \sqrt{G_x^2 + G_y^2}$$
 
 Steps for Sobel Edge Detection:
-1. **Compute Gradients**: Compute the gradients in the x and y directions using the Sobel kernels \( G_x \) and \( G_y \).
+1. **Compute Gradients**: Compute the gradients in the x and y directions using the Sobel kernels $$G_x$$ and $$G_y$$.
     ```python
     Gx = np.array([[-1, 0, 1], [-2, 0, 2], [-1, 0, 1]])
     Gy = Gx.T
     gradient_x = convolve2d(image_gray, Gx)
     gradient_y = convolve2d(image_gray, Gy)
     ```
-2. **Calculate Gradient Magnitude**: Calculate the gradient magnitude using the formula \( G = \sqrt{G_x^2 + G_y^2} \).
+2. **Calculate Gradient Magnitude**: Calculate the gradient magnitude using the formula $$G = \sqrt{G_x^2 + G_y^2}$$.
     ```python
     gradient_magnitude = np.sqrt(gradient_x**2 + gradient_y**2)
     ```
