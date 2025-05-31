@@ -71,8 +71,10 @@ Steps for Gaussian Blurring:
 We use the Sobel operator to detect edges in the image. The Sobel operator calculates the gradient magnitude of the image, highlighting regions with high spatial frequency which correspond to edges.
 
 Sobel Edge Detection Formula:
-\$$G_x=\begin{bmatrix} -1 & 0 & 1 \\ -2 & 0 & 2 \\ -1 & 0 & 1 \end{bmatrix}$$
-\$$G_y=\begin{bmatrix} -1 & -2 & -1 \\ 0 & 0 & 0 \\ 1 & 2 & 1 \end{bmatrix}$$
+```math
+G_x=\begin{bmatrix} -1 & 0 & 1 \\ -2 & 0 & 2 \\ -1 & 0 & 1 \end{bmatrix}
+G_y=\begin{bmatrix} -1 & -2 & -1 \\ 0 & 0 & 0 \\ 1 & 2 & 1 \end{bmatrix}
+```
 
 Gradient Magnitude:
 $$G = \sqrt{G_x^2 + G_y^2}$$
