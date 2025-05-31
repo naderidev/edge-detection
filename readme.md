@@ -46,8 +46,8 @@ Gaussian Blur Formula:
 $$G(x, y) = \frac{1}{2\pi\sigma^2} e^{-\frac{x^2 + y^2}{2\sigma^2}}$$
 
 Where:
-- \( G(x, y) \) is the Gaussian function.
-- \( \sigma \) is the standard deviation of the Gaussian distribution.
+- $$G(x, y)$$ is the Gaussian function.
+- $$\sigma$$ is the standard deviation of the Gaussian distribution.
 
 Steps for Gaussian Blurring:
 1. **Create the Gaussian Kernel**: The kernel is created using the Gaussian function.
