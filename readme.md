@@ -100,10 +100,12 @@ Steps for Sobel Edge Detection:
 We apply a threshold to the gradient magnitude image to create a binary image where edges are highlighted.
 
 Thresholding Formula:
-$$T(x, y) = \begin{cases} 
+```math
+T(x, y) = \begin{cases} 
 255 & \text{if } G(x, y) > \text{threshold} \\
 0 & \text{otherwise}
-\end{cases}$$
+\end{cases}
+```
 
 Steps for Thresholding:
 1. **Apply Threshold**: Convert the gradient magnitude image to a binary image based on the threshold value.
